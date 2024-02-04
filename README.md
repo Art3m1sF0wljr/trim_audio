@@ -17,3 +17,5 @@ app4 trimma il white noise
 per i sounds(automatic recordings) metti threshold > 2.5
 
 app5 è per i vecchi audio, come test
+
+app6 trimma con un buffer di 15 time units(circa 250ms) così le parole non vengono tranciate quando si parla piano
