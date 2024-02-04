@@ -12,7 +12,7 @@ def get_arguments():
     arguments = parser.parse_args()
     return arguments
 
-def remove_high_power_segments(input_audio, output_audio, threshold=23):
+def remove_high_power_segments(input_audio, output_audio, threshold=18):
     # Load the audio file
     data, sr = librosa.load(input_audio)
     
