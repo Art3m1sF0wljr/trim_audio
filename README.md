@@ -7,9 +7,11 @@ i 475 units
 per i sounds(automatic recordings), il white noise ha potenza molto bassa (per via del basso guadagno di rtl_fm)
 
 app3 trimma il white noise
-per i gqrx recordings (49 db LNA, -8db gain) metti threshold < 18
+per i gqrx recordings (49 db LNA, -8db gain) metti threshold < 475
+per i sounds(automatic recordings) metti threshold < 18
 current settings per rtl_fm
 command = f"rtl_fm -f 145575000 -s 12500 -g 49 -p 1 -M fm | sox -t raw -r 12500 -e signed -b 16 -c 1 - -t wav -r 12500 -e signed -b 16 -c 1 {filename}"
+white noise ha potenza >18 di notte e >23 di giorno. mantieni il setting notturno così non devi modificare lo script ogni volta;
 
 app4 trimma il white noise
 per i sounds(automatic recordings) metti threshold > 2.5
