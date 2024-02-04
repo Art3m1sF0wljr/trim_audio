@@ -12,7 +12,7 @@ def get_arguments():
     arguments = parser.parse_args()
     return arguments
 
-def remove_high_power_segments(input_audio, output_audio, threshold=475):
+def remove_high_power_segments(input_audio, output_audio, threshold=1.15):
     # Load the audio file
     data, sr = librosa.load(input_audio)
     
@@ -26,7 +26,7 @@ def remove_high_power_segments(input_audio, output_audio, threshold=475):
     mean_power = np.mean(power_spectrogram, axis=0)
 
     # Create a mask to identify segments with mean power below the threshold
-    mask = mean_power < threshold
+    mask = mean_power > threshold
 
     # Convert the mask to indices
     indices = np.nonzero(mask)[0]
