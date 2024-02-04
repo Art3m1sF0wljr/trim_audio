@@ -16,6 +16,8 @@ white noise ha potenza >18 di notte e >23 di giorno. mantieni il setting notturn
 app4 trimma il white noise
 per i sounds(automatic recordings) metti threshold > 2.5
 
-app5 è per i vecchi audio, come test
+app5 è per i vecchi audio, come test, e prende tutti i files inside a folder
 
 app6 trimma con un buffer di 15 time units(circa 250ms) così le parole non vengono tranciate quando si parla piano
+
+app7 fa quel che fa app6 con tutti i files inside a folder
