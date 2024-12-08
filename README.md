@@ -21,3 +21,5 @@ app5 è per i vecchi audio, come test, e prende tutti i files inside a folder
 app6 trimma con un buffer di 15 time units(circa 250ms) così le parole non vengono tranciate quando si parla piano
 
 app7 fa quel che fa app6 con tutti i files inside a folder
+
+app2_new.py is like app2.py but with reduced memory usage when computing the fft on long audios (dividing correctly the audio in 10s chunks)
